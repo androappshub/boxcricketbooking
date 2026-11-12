@@ -1,0 +1,322 @@
+
+/* ==============================
+   BOX CRICKET BOOKING
+   Main Website Styles
+================================ */
+
+:root {
+    --primary: #a3e635;
+    --primary-dark: #84cc16;
+    --background: #07111f;
+    --surface: #101e30;
+    --surface-light: #17283d;
+    --text: #f8fafc;
+    --muted: #a5b4c5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* NAVBAR */
+
+.navbar {
+    background: #081321;
+    padding: 18px 0;
+    border-bottom: 1px solid #26374a;
+}
+
+.navbar-brand {
+    font-size: 23px;
+    color: var(--text) !important;
+}
+
+.brand-icon {
+    color: var(--primary);
+}
+
+.nav-link {
+    color: #cbd5e1 !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--primary) !important;
+}
+
+.btn-success {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #101820;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #101820;
+}
+
+.btn-outline-light:hover {
+    color: #101820;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 40%, #243c25 0%, transparent 35%),
+        linear-gradient(120deg, #07111f, #10243a);
+    padding: 80px 0;
+}
+
+.min-vh-75 {
+    min-height: 430px;
+}
+
+.hero-label {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-title {
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero-title span {
+    display: block;
+    color: var(--primary);
+}
+
+.hero-description {
+    color: var(--muted);
+    font-size: 18px;
+    max-width: 550px;
+}
+
+.hero-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid #425365;
+    border-radius: 24px;
+    padding: 55px 25px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.cricket-icon {
+    font-size: 85px;
+    margin-bottom: 15px;
+}
+
+.hero-card h3 {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.hero-card p {
+    color: var(--muted);
+}
+
+/* SECTION HEADINGS */
+
+.features-section,
+.how-section,
+.about-section,
+.contact-section {
+    padding: 85px 0;
+}
+
+.section-heading span,
+.about-section span,
+.contact-section span {
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2,
+.about-section h2,
+.contact-section h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.section-heading p,
+.about-section p,
+.contact-section p {
+    color: var(--muted);
+    margin-top: 12px;
+}
+
+/* FEATURE CARDS */
+
+.feature-card,
+.step-card {
+    background: var(--surface);
+    border: 1px solid #26374a;
+    border-radius: 18px;
+    padding: 30px;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.feature-card:hover,
+.step-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--primary);
+}
+
+.feature-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.feature-card h4,
+.step-card h4 {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.feature-card p,
+.step-card p {
+    color: var(--muted);
+    margin-bottom: 0;
+}
+
+/* HOW IT WORKS */
+
+.how-section {
+    background: #0b1828;
+}
+
+.step-card h3 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+
+.about-section {
+    background: var(--surface);
+}
+
+.about-section p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #0b1828;
+}
+
+/* FOOTER */
+
+.footer {
+    background: #050c15;
+    padding: 45px 0 20px;
+}
+
+.footer h4 {
+    font-weight: bold;
+    color: var(--primary);
+}
+
+.footer p {
+    color: var(--muted);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: var(--primary);
+}
+
+.footer hr {
+    border-color: #26374a;
+}
+
+.copyright {
+    font-size: 13px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 65px 0;
+        text-align: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-card {
+        padding: 35px 20px;
+    }
+
+    .section-heading h2,
+    .about-section h2,
+    .contact-section h2 {
+        font-size: 27px;
+    }
+
+    .features-section,
+    .how-section,
+    .about-section,
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+}
